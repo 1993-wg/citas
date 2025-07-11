@@ -1,0 +1,289 @@
+/* Estilos generales */
+body {
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+}
+
+/* Encabezado */
+.fondo-blanco {
+  background-color: #fff;
+}
+
+.borde-inferior {
+  border-bottom: 1px solid #dee2e6;
+}
+
+.sombra-azul {
+  box-shadow: 0 4px 8px rgba(0, 74, 155, 0.1);
+}
+
+.sombra-suave {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo img {
+  width: 200px;
+  height: auto;
+}
+
+.logo {
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Navegación */
+nav .btn-outline-primary {
+  color: #0066cc;
+  border-color: #0066cc;
+}
+
+nav .btn-outline-primary:hover {
+  background-color: #0066cc;
+  color: #fff;
+}
+
+/* Buscador */
+.bordes-redondeados {
+  border-radius: 50rem;
+}
+
+/* Botones */
+.btn-primario {
+  background-color: #0066cc;
+  border-color: #0066cc;
+  color: #fff;
+}
+
+.btn-primario:hover {
+  background-color: #004a9b;
+  border-color: #004a9b;
+}
+
+/* Tarjetas */
+.tarjeta {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+}
+
+.fondo-azul-claro {
+  background-color: #e6f0fa;
+}
+
+.tarjeta-titulo {
+  color: #0066cc;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.tarjeta-subtitulo {
+  color: #004a9b;
+}
+
+.tarjeta-contenido {
+  padding: 1.5rem;
+}
+
+.tarjeta-texto {
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.tarjeta-contacto {
+  border: 1px solid #dee2e6;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Carrusel */
+.carousel {
+  margin-bottom: 20px;
+}
+
+.carousel-item img {
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #004a9b;
+  border-radius: 50%;
+  padding: 10px;
+  filter: brightness(0) invert(1);
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: #0066cc;
+}
+
+/* Carrusel de noticias */
+#newsCarousel .carousel-inner {
+  padding: 10px 0;
+}
+
+#newsCarousel .carousel-item {
+  display: flex;
+}
+
+#newsCarousel .tarjeta {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#newsCarousel .carousel-control-prev,
+#newsCarousel .carousel-control-next {
+  width: 5%;
+}
+
+/* Video */
+.borde-primario {
+  border: 1px solid #0066cc;
+}
+
+.texto-justificado {
+  text-align: justify;
+}
+
+/* Tablas */
+.fondo-primario {
+  background-color: #0066cc;
+  color: #fff;
+}
+
+table th,
+table td {
+  vertical-align: middle;
+}
+
+.icono-pdf {
+  width: 30px;
+  height: auto;
+}
+
+/* Colores adicionales */
+.texto-rojo {
+  color: #dc3545;
+}
+
+.texto-amarillo {
+  color: #ffc107;
+}
+
+/* Contacto */
+.row-cols-md-3 .tarjeta {
+  flex: 1 1 30%;
+  min-width: 0;
+}
+
+/* Footer */
+.fondo-azul-oscuro {
+  background-color: #004a9b;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.iconos-redes a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.iconos-redes a:hover {
+  color: #0066cc;
+}
+
+/* Inicio de sesión */
+.seccion-inicio {
+  padding: 40px 0;
+  min-height: calc(100vh - 200px);
+}
+
+.formulario-inicio {
+  max-width: 450px;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 1px solid #dee2e6;
+}
+
+.formulario-inicio .form-control {
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 16px;
+  margin-top: 4px;
+}
+
+.formulario-inicio .form-control:focus {
+  border-color: #0066cc;
+  box-shadow: 0 0 4px rgba(0, 102, 204, 0.3);
+}
+
+.formulario-inicio .form-label {
+  font-weight: bold;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.texto-olvidado {
+  color: #0066cc;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.texto-olvidado:hover {
+  text-decoration: underline;
+}
+
+.texto-crear-cuenta {
+  color: #dc3545;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.texto-crear-cuenta:hover {
+  text-decoration: underline;
+}
+
+.texto-pie {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.texto-pie .separador {
+  margin: 0 5px;
+  color: #ccc;
+}
+
+.texto-ayuda {
+  color: #666;
+  text-decoration: none;
+}
+
+.texto-ayuda:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .formulario-inicio {
+    padding: 20px;
+  }
+
+  .seccion-inicio {
+    padding: 20px 0;
+  }
+}
