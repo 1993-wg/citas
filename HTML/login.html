@@ -33,32 +33,22 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12 col-md-6">
-          <form class="formulario-inicio fondo-blanco sombra-suave p-4">
+          <form id="frmLogin" class="formulario-inicio fondo-blanco sombra-suave p-4">
             <h2 class="tarjeta-titulo text-center mb-4">Iniciar sesión</h2>
             <div class="mb-3">
-              <label for="tipoIdentificacion" class="form-label">Tipo de identificación</label>
-              <select class="form-control" id="tipoIdentificacion">
-                <option value="" disabled selected>Tipo de identificación</option>
-                <option value="cc">Cédula de Ciudadanía</option>
-                <option value="ce">Cédula de Extranjería</option>
-                <option value="ti">Tarjeta de Identidad</option>
-                <option value="pasaporte">Pasaporte</option>
-              </select>
+              <label for="txtEmailLogin" class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" id="txtEmailLogin" placeholder="ejemplo@correo.com" required>
             </div>
             <div class="mb-3">
-              <label for="numeroIdentificacion" class="form-label">Número de identificación</label>
-              <input type="text" class="form-control" id="numeroIdentificacion" placeholder="Número de identificación">
-            </div>
-            <div class="mb-3">
-              <label for="contrasena" class="form-label">Contraseña</label>
-              <input type="password" class="form-control" id="contrasena" placeholder="Contraseña">
+              <label for="txtPasswordLogin" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="txtPasswordLogin" placeholder="Contraseña" required>
             </div>
             <div class="text-end mb-3">
               <a href="#!" class="texto-olvidado">¿Has olvidado tu contraseña?</a>
             </div>
-            <button type="button" class="btn btn-primario w-100">Iniciar sesión</button>
+            <button type="submit" id="btnLogin" class="btn btn-primario w-100">Iniciar sesión</button>
             <p class="text-center mt-3">
-              ¿Aún no tienes una cuenta? <a href="#!" class="texto-crear-cuenta">Crea una cuenta</a>
+              ¿Aún no tienes una cuenta? <a href="registro_usuario.html" class="texto-crear-cuenta">Crea una cuenta</a>
             </p>
             <div class="texto-pie text-center mt-4">
               © 2025 MEDISSOFF EXCELENT <span class="separador">|</span> <a href="#!" class="texto-ayuda">Ayuda</a>
@@ -83,5 +73,7 @@
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Auth JS -->
+  <script type="module" src="../JS/auth.js"></script>
 </body>
 </html>
