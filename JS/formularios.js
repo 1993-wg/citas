@@ -13,12 +13,12 @@ document.addEventListener('DOMContentLoaded', () => {
       btnSubmit.innerText = 'Guardando...';
 
       const datos = {
-        nombres: document.getElementById('txtNombres').value,
-        apellidos: document.getElementById('txtApellidos').value,
-        documento: document.getElementById('txtDocumento').value,
-        telefono: document.getElementById('txtTelefono').value,
-        email: document.getElementById('txtEmail').value,
-        fecha_nacimiento: document.getElementById('txtFechaNac').value
+        "nombres": document.getElementById('txtNombres').value,
+        "apellidos": document.getElementById('txtApellidos').value,
+        "documento": document.getElementById('txtDocumento').value,
+        "teléfono": document.getElementById('txtTelefono').value,
+        "email": document.getElementById('txtEmail').value,
+        "fecha_nacimiento": document.getElementById('txtFechaNac').value
       };
 
       const { data, error } = await supabase.from('pacientes').insert([datos]);
@@ -55,10 +55,10 @@ document.addEventListener('DOMContentLoaded', () => {
       btnSubmit.innerText = 'Guardando...';
 
       const datos = {
-        nombre: document.getElementById('txtNombreMedico').value,
-        especialidad: document.getElementById('txtEspecialidad').value,
-        telefono: document.getElementById('txtTelefonoMedico').value,
-        email: document.getElementById('txtEmailMedico').value
+        "nombre": document.getElementById('txtNombreMedico').value,
+        "especialidad": document.getElementById('txtEspecialidad').value,
+        "teléfono": document.getElementById('txtTelefonoMedico').value,
+        "email": document.getElementById('txtEmailMedico').value
       };
 
       const { data, error } = await supabase.from('medicos').insert([datos]);
