@@ -287,3 +287,44 @@ table td {
     padding: 20px 0;
   }
 }
+
+/* --- Nuevos Ajustes Minimalistas y Usabilidad (EPS SURA) --- */
+.nav-responsiva {
+  flex-wrap: wrap; /* Permitir que los botones bajen de línea si no alcanzan */
+  justify-content: center;
+}
+
+header {
+  padding: 1rem 0;
+}
+
+body {
+  /* Fondo más sereno / minimalista */
+  background-color: #fcfcfc;
+}
+
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Hacer los botones atractivos en hover */
+.btn {
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .nav-responsiva a {
+    width: 100%;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  .nav-responsiva .btn-primario {
+    transform: none !important;
+  }
+}
