@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const datos = {
         "nombre": document.getElementById('txtNombreMedico').value,
         "especialidad": document.getElementById('txtEspecialidad').value,
-        "teléfono": document.getElementById('txtTelefonoMedico').value,
+        "telefono": document.getElementById('txtTelefonoMedico').value,
         "email": document.getElementById('txtEmailMedico').value
       };
 
